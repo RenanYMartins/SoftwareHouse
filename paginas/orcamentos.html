@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/layoutOrcamentos.css">
+    <script type="text/javascript" src="../scripts/orcamentos.js"></script>
     <title>Atech</title>
 </head>
 
@@ -35,19 +36,20 @@
         </section>
 
         <section class="areaFormulario">
-            <form>
+            <form action="#" method="post" name="frmOrcamentos">
                 <h2>CONTATO</h2>
                 <p>Faça a solicitação do seu orçamento e em breve retornaremos o contato. </p>
                 <fieldset>
                     <label for="nome">Nome* </label>
-                    <input id="nome" name="nome" type="text" required>
+                    <input id="nome" name="nome" type="text">
                     <label for="email">Email* </label>
-                    <input id="email" name="email" type="email" required>
+                    <input id="email" name="email" type="email">
                     <label for="celular">Celular* </label>
-                    <input id="celular" name="celular" type="text" required>
+                    <input id="celular" name="celular" type="text">
                     <label for="tipo">Solução Desejada*</label>
-                    <select id="tipo" name="tipo" required>
-                        <option value="todas" selected>Todas as soluções</option>
+                    <select id="tipo" name="tipo">
+                        <option value="" selected disabled>Selecione uma opção</option>
+                        <option value="todas">Todas as soluções</option>
                         <option value="mobile">Mobile</option>
                         <option value="desktop">Desktop</option>
                         <option value="web">Web</option>
@@ -57,15 +59,16 @@
                         placeholder="Aqui você pode descrever um pouco do seu negócio para já nos conhecermos ou enviar qualquer outra informação que julgar necessária"></textarea>
                 </fieldset>
                 <section id="areaBtn">
-                    <button type="submit">ENVIAR</button>
+                    <button type="button" onclick="validarUsuario()">ENVIAR</button>
+                    <button type="reset" id="btnLimpar" onclick="Limpar()">Limpar</button>
                 </section>
             </form>
         </section>
 
         <section class="area_direita">
-            <section class="card_branco_direito">
-
-            </section>
+            <aside class="card_branco_direito">
+                <address> Se identificar qualquer bug ou tiver qualquer dificuldade no site, você pode contatar o autor em <a href="https://github.com/RenanYMartins" target="_blank">https://github.com/RenanYMartins</a></address>
+            </aside>
         </section>
     </main>
     <footer>
