@@ -63,7 +63,7 @@ nav li a {
     padding: 8px 16px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.30rem;
     align-items: center;
     text-align: center;
     
@@ -113,7 +113,7 @@ nav li a {
 
 h2 {
     color: #FFFF;
-    font-size: 40px;
+    font-size: 2.7rem;
     padding-left: 30px;
     padding-right: 15px;
     margin-bottom: 20px;
@@ -122,7 +122,7 @@ h2 {
 
 h3 {
     color: #FFFF;
-    font-size: 24px;
+    font-size: 1.50rem;
     padding-left: 30px;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -130,7 +130,7 @@ h3 {
 
 p {
     color: #DBDBDB;
-    font-size: 20px;
+    font-size: 1.20rem;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 10px;
@@ -149,8 +149,8 @@ p {
 button {
     background-color: #4E5FFF;
     color: #FFFF;
-    height:100%;
-    width: 30%;
+    padding: 1%;
+    width: 20vw;
     text-align: center;
     font-size: 18px;
     border-radius: 10%;
@@ -211,5 +211,6 @@ footer {
 
 footer > p{
     text-align: center;
+    font-size: 1.2rem;
     flex-grow: 1;
 }

@@ -22,10 +22,10 @@ body {
 main{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    /* height: calc(100%-150px); */
+    /* width: 100%; */
     flex: 1;
-    
+    background-image: url(../imagens/circuitos.png);
+    background-size: cover;
 }
 
 #logo {
@@ -63,7 +63,7 @@ nav li a {
     padding: 8px 16px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.30rem;
     align-items: center;
     text-align: center;
     
@@ -100,7 +100,7 @@ nav li a {
 .areaTexto {
     display: flex; 
     height: 99%;
-    width: 60%;
+    width: 95%;
     flex-direction: column;
     border-bottom-right-radius: 30px;
     /* background-color: #2C2C2C; */
@@ -195,21 +195,29 @@ button {
 
 .area_direita{
     display: flex; 
-    height: 100%;
-    width: 25%;
     flex-direction: column;
-    background-color: #2C2C2C;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: justify;
 }
 
 .card_branco {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
     border-top-left-radius: 60px;
-    height: 100%;
+    width: 37vw;
+}
+
+.areaVideo {
+    position: relative;
     width: 100%;
-    background-color: white;
+    padding-left: 2%;
+}
+
+iframe {
+    width: 34vw;
+    height: 20vw;
 }
 
 footer {
@@ -226,6 +234,7 @@ footer {
 
 footer > p{
     text-align: center;
+    font-size: 1.2rem;
     flex-grow: 1;
 }
 
@@ -236,6 +245,7 @@ footer > p{
     margin-left: -35px;
     margin-top: -35px;
     background-color: white;
+    opacity: 100%;
 }
 
 .area_inferior {
