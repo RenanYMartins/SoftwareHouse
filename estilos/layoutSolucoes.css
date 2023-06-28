@@ -17,6 +17,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 main {
@@ -215,7 +216,6 @@ button {
     width: 80%;
     padding-left: 5%;
     padding-top: 5%;
-    /* padding-left: 4%; */
 }
 
 iframe {
@@ -226,7 +226,6 @@ iframe {
 footer {
     display: flex;
     align-items: center;
-    /* text-align: center; */
     justify-content: center;
     height: 30px;
     width: 100%;
@@ -248,7 +247,6 @@ footer>p {
     margin-left: -35px;
     margin-top: -35px;
     background-color: white;
-    opacity: 100%;
 }
 
 .area_inferior {
